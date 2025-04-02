@@ -58,4 +58,9 @@ It may well have issues.\
 Try it at your own risk.\
 If you find a problem, please report it via **Issues** here in GitHub.
 
-PSCom is currently licensed only for testing purposes.\
+PSCom is currently licensed only for testing purposes.
+
+This repository contains all of the source code so that you can compile it using Visual Studio 2019.
+
+Take Command Console is from https://jpsoft.com/all-downloads/all-downloads.html
+
