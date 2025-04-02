@@ -10,4 +10,3 @@ E:\Documents\vb.net\PSCom\obj\Release\PSCom.vbproj.CopyComplete
 E:\Documents\vb.net\PSCom\obj\Release\PSCom.dll
 E:\Documents\vb.net\PSCom\obj\Release\PSCom.xml
 E:\Documents\vb.net\PSCom\obj\Release\PSCom.pdb
-E:\Documents\vb.net\PSCom\obj\Release\PSCom.vbproj.AssemblyReference.cache

@@ -21,7 +21,17 @@ Public Class PSScript
         End Try
     End Function
 
-    Public Function Add2(theNumber As Long) As Long
-        Return theNumber + 2
+    Public Function ExecuteCommand(command As String) As String
+        Try
+            Using ps As PowerShell = PowerShell.Create()
+                ' Add the script directly, not treating it as a file path
+                ps.AddScript(command)
+                Dim results = ps.Invoke()
+                Dim output As String = String.Join(Environment.NewLine, results.Select(Function(r) r.ToString()))
+                Return output
+            End Using
+        Catch ex As Exception
+            Return $"Error: {ex.Message}"
+        End Try
     End Function
 End Class

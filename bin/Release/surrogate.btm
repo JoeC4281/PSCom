@@ -1,0 +1,60 @@
+:: SURROGATE.BTM
+:: Create a DLLSurrogate for each class in a 64-bit COM DLL,
+::   so that it can be used from a 32-bit Application (VBScript, etc.)
+::
+@setlocal
+@echo off
+
+:: USAGE:
+:: surrogate PSCom.PSScript
+
+iff %# eq 1 then
+  Gosub MainProc
+else
+  echo USAGE: %_batchname ProgID
+endiff
+endlocal
+quit
+
+::
+:: Main Procedure
+::
+:MainProc
+alias ClsID=`echo %@regquery[HKEY_CLASSES_ROOT\%1\clsid\]`
+function ClsID=`%@regquery[HKEY_CLASSES_ROOT\%1\clsid\]`
+
+iff %@ClsID[%1] eq -1 then
+  echo %1 is an invalid ProgID
+  echo.
+  echo Make sure that you registered the 64-bit COM DLL with regasm.exe
+  quit
+endiff
+
+echo %@ClsID[%1]
+
+:: @REGxx functions could be used.
+:: Instead, I chose to use a .reg script for use with regedit.exe
+:: Reference: https://ss64.com/nt/regedit.html
+::            https://www.robvanderwoude.com/regedit.php
+Gosub RegScript
+
+type surrogate.reg
+
+%_wow64dir\regedit.exe /s surrogate.reg
+Return
+
+::
+:: RegScript
+::
+:RegScript
+type <<- endtext > surrogate.reg
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\AppID\%@ClsID[%1]]
+"DllSurrogate"=""
+
+[HKEY_CLASSES_ROOT\CLSID\%@ClsID[%1]]
+"AppID"="%@ClsID[%1]"
+endtext
+Return
+
