@@ -1,0 +1,4 @@
+E:\Documents\vb.net\PSCom\obj\Debug\PSCom.vbproj.AssemblyReference.cache
+E:\Documents\vb.net\PSCom\obj\Debug\PSCom.Resources.resources
+E:\Documents\vb.net\PSCom\obj\Debug\PSCom.vbproj.GenerateResource.cache
+E:\Documents\vb.net\PSCom\obj\Debug\PSCom.vbproj.CoreCompileInputs.cache

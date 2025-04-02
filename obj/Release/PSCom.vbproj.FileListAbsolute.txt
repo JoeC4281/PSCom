@@ -1,0 +1,13 @@
+E:\Documents\vb.net\PSCom\bin\Release\PSCom.dll
+E:\Documents\vb.net\PSCom\bin\Release\PSCom.pdb
+E:\Documents\vb.net\PSCom\bin\Release\PSCom.xml
+E:\Documents\vb.net\PSCom\bin\Release\PSCom.tlb
+E:\Documents\vb.net\PSCom\bin\Release\System.Management.Automation.dll
+E:\Documents\vb.net\PSCom\obj\Release\PSCom.Resources.resources
+E:\Documents\vb.net\PSCom\obj\Release\PSCom.vbproj.GenerateResource.cache
+E:\Documents\vb.net\PSCom\obj\Release\PSCom.vbproj.CoreCompileInputs.cache
+E:\Documents\vb.net\PSCom\obj\Release\PSCom.vbproj.CopyComplete
+E:\Documents\vb.net\PSCom\obj\Release\PSCom.dll
+E:\Documents\vb.net\PSCom\obj\Release\PSCom.xml
+E:\Documents\vb.net\PSCom\obj\Release\PSCom.pdb
+E:\Documents\vb.net\PSCom\obj\Release\PSCom.vbproj.AssemblyReference.cache
