@@ -53,6 +53,9 @@ E:\...\Release>cscript.exe //nologo test.vbs
 2025-04-02 2:11:43 PM
 66
 ```
+Note that there is also a <span style="font-family: Courier New; font-size: 20px;">test.js file</span>,\
+for those who prefer to use JScript.
+
 Please consider this beta software.\
 It may well have issues.\
 Try it at your own risk.\
