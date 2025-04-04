@@ -1,0 +1,23 @@
+﻿uses "Console"
+' Uses "Trace"
+
+dim ps as iDispatch
+dim result as string
+
+printl "Creating PSCom.PSScript object"
+
+ps = CreateObject("PSCom.PSScript")
+
+if IsComObject(ps) then
+  result = ps.ExecuteScript("e:\utils\winver.ps1")
+
+  printl result
+  
+  result = ps.ExecuteCommand("Get-Date; 2025-1959")
+  
+  Printl result
+Else
+  Printl "Could not create PSCom.PSScript object"
+end if
+
+ps = Nothing

@@ -53,8 +53,51 @@ E:\...\Release>cscript.exe //nologo test.vbs
 2025-04-02 2:11:43 PM
 66
 ```
-Note that there is also a <span style="font-family: Courier New; font-size: 20px;">test.js file</span>,\
-for those who prefer to use JScript.
+Here's a JScript example for using the PSCom.dll;
+```VB Script
+var obj, result;
+
+// Create the COM object
+obj = new ActiveXObject("PSCom.PSScript");
+
+// Test ExecuteScript with a sample PowerShell script path
+result = obj.ExecuteScript("E:\\Utils\\WinVer.ps1");
+WScript.Echo(result);
+
+// Test ExecuteCommand with a sample PowerShell command(s)
+result = obj.ExecuteCommand("Get-Date; 2025-1959");
+WScript.Echo(result);
+
+obj = null;
+```
+
+
+Here's a thinBasic example for using the PSCom.dll;
+```VB Script
+uses "Console"
+' Uses "Trace"
+
+dim ps as iDispatch
+dim result as string
+
+printl "Creating PSCom.PSScript object"
+
+ps = CreateObject("PSCom.PSScript")
+
+if IsComObject(ps) then
+  result = ps.ExecuteScript("e:\utils\winver.ps1")
+
+  printl result
+  
+  result = ps.ExecuteCommand("Get-Date; 2025-1959")
+  
+  Printl result
+Else
+  Printl "Could not create PSCom.PSScript object"
+end if
+
+ps = Nothing
+```
 
 Please consider this beta software.\
 It may well have issues.\
