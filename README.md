@@ -2,7 +2,7 @@
 This is a 64-bit COM ActiveX .dll that allows me to run a PowerShell Script,\
 or a PowerShell Command(s),\
 from 64-bit or 32-bit VBScript.
-a
+
 You will need to use <span style="font-family: Courier New; font-size: 20px;">RegASM.exe</span> to register the <span style="font-family: Courier New; font-size: 20px;">PSCom.dll</span> on your system.
 
 ```vbscript
