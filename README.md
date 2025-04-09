@@ -26,6 +26,23 @@ Windows Registry Editor Version 5.00
 ```
 I developed this COM ActiveX .dll using VB.NET in Visual Studio 2019 on Windows 10 Pro.
 
+---
+If you want to build the project from the command line,\
+first make sure that you are using the <span style="font-family: Courier New; font-size: 20px;">**MSBuild.exe**</span> included with VS 2019.
+
+On my Windows 10 system, I ran the <span style="font-family: Courier New; font-size: 20px;">**vcvarsall.bat**</span> from;
+
+<span style="font-family: Courier New; font-size: 20px;">C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat</span>
+
+This sets my development environment up properly for use with VS 2019 utils.
+
+Next, I build the project;
+
+<span style="font-family: Courier New; font-size: 20px;">**msbuild.exe PSCom.vbproj** **/p:Configuration=Release /p:Platform=AnyCPU**</span>
+
+This creates <span style="font-family: Courier New; font-size: 20px;">**E:\Documents\vb.net\PSCom\bin\Release\PSCom.dll**</span>
+
+---
 In the https://github.com/JoeC4281/PSCom/tree/master/bin/Release folder,\
 there is the <span style="font-family: Courier New; font-size: 20px;">test.vbs</span> file;
 ```VB Script

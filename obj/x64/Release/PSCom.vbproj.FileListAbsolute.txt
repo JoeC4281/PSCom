@@ -10,3 +10,4 @@ E:\Documents\vb.net\PSCom\obj\x64\Release\PSCom.vbproj.CopyComplete
 E:\Documents\vb.net\PSCom\obj\x64\Release\PSCom.dll
 E:\Documents\vb.net\PSCom\obj\x64\Release\PSCom.xml
 E:\Documents\vb.net\PSCom\obj\x64\Release\PSCom.pdb
+E:\Documents\vb.net\PSCom\bin\x64\Release\PSCom.tlb
